@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szymon Nawrocki - Portfolio</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script src="https://kit.fontawesome.com/a3026dcf2f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo"><i class="fas fa-vihara"></i></a>
+      <div class="burger-menu" id="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#school-section">School</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#hobbies-section">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="welcome-section" class="welcome-section">
+    <div class="background-image">
+      <img src="img/digital.jpg" alt="Background Image of lights">
+    </div>
+    <div class="welcome-content">
+      <h1>Hello! I'm Szymon Nawrocki</h1>
+      <p>Welcome to my portfolio. I'm thrilled to have you here. </p>
+      <div class="scroll-arrow" onclick="scrollToAbout()">
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <div id="about" class="container">
+    <section class="about">
+      <div class="about__content">
+        <div class="about__text">
+          <h2 class="about__title">About Me</h2>
+          <p>Greetings! I'm an IT enthusiast and self-taught frontend developer who embarked journey into the world of
+            computer science over a year ago. My interest goes beyond just frontend development; I'm captivated by the
+            entirety of the IT domain. Each day, I immerse myself in the ever-changing landscape of technology, making
+            it
+            a personal mission to learn something new daily. For me, this journey is more than a passion – it's a way of
+            life. I am resolutely committed to mastering every facet of computer science and staying abreast of the
+            latest
+            developments in this dynamic field.
+          </p>
+          <div class="cv"><a href="img/szymon nawrocki cv eng.pdf" download="szymonnawrocki-cv.pdf"><i
+                class="fa-solid fa-file-lines"> cv</i></a></div>
+        </div>
+        <div class="about__photo">
+          <img src="img/nawrocki.jpg" alt="Szymon Nawrocki Photo">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="school-section" class="container">
+    <div id="school-section" class="school-section">
+      <div class="school-section__title-container">
+        <div class="school-section__title">School</div>
+      </div>
+      <div class="school-section__content-container">
+        <div class="school-section__photo">
+          <img src="img/library.jpg" alt="School Photo">
+        </div>
+        <div class="school-section__text-container">
+          <div class="school-section__subtitle">
+            Collegium <a href="https://cdv.pl/" target="_blank"
+              class="school-section__link school-section__link--davinci">Da Vinci <i
+                class="fas fa-school school-section__icon"></i></a> Poznań- IT Online (October 2023 - currently)
+          </div>
+          <p class="school-section__paragraph">After a year of self-directed coding education and successfully
+            completing
+            my first degree, I felt it was the opportune moment to elevate my skills. Looking back, I consider this
+            decision to be one of the most impactful in my life, particularly given the current era of remarkable
+            advancements in the field of IT.</p>
+          <div class="school-section__subtitle">
+            University <a href="https://www.merito.pl/gdansk/" target="_blank"
+              class="school-section__link school-section__link--wsb">WSB <i
+                class="fas fa-school school-section__icon"></i></a> Merito Gdańsk- Law in Business, spec. law and
+            management (2020 - 2023)
+          </div>
+          <p class="school-section__paragraph">At that time, my life's direction was a bit unclear, but I found myself
+            drawn to subjects like politics, law, business management, and investing. Those three years became a
+            valuable
+            window for me to explore each of these areas, gaining knowledge that has since proven to be quite practical.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="skills-section" class="container">
+    <div class="skills-section">
+      <h2>Skills</h2>
+      <div class="image-and-icons">
+        <div class="icons-left">
+          <div class="icon-and-text cplusplus">
+            <h3>C++</h3>
+            <p>I started learning C++ on my own as a first programming language. I am now also learning it at university
+              by solving practical examples. Next semester's studies will focus on mathematics and game development
+              using
+              the language.</p>
+          </div>
+          <div class="icon-and-text javascript">
+            <h3>JavaScript <i class="fa-brands fa-js"></i></h3>
+            <p>I've completed two JavaScript courses and used the language extensively in a four-course web development
+              series, solidifying my command of JavaScript.</p>
+          </div>
+        </div>
+        <img src="img/brain.png" alt="Machine Brain">
+        <div class="icons-right">
+          <div class="icon-and-text terminal">
+            <h3><i class="fa-solid fa-terminal"></i> Terminal </h3>
+            <p>I've learned command-line basics on my own and during studies. I'm comfortable with Git for version
+              control
+              and have practical experience with Vi, Vim, and Bash. These skills help me efficiently navigate, edit
+              files,
+              and write scripts.</p>
+          </div>
+          <div class="icon-and-text react">
+            <h3>React <i class="fa-brands fa-react"></i></h3>
+            <p>I have basic knowledge of React and a strong interest in the library. Excited about its possibilities, my
+              next project will be created using React, allowing me to delve deeper into its capabilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="icons-below">
+        <div class="icon-and-text sass">
+          <h3><i class="fa-brands fa-sass"></i></h3>
+          <p>I'm a front-end developer with strong skills in HTML, Sass, and CSS. I use HTML5 to create organized and
+            accessible content. In styling, I leverage Sass for cleaner and more manageable code. I'm proficient in CSS,
+            especially in making designs responsive and using Flexbox and Grid for dynamic layouts.</p>
+        </div>
+        <div class="icon-and-text ai">
+          <h3>AI <i class="fa-solid fa-microchip"></i></h3>
+          <p>I'm really into AI and use it in my daily work. If my career heads in that direction, I'm totally fine with
+            it. The idea of using AI to improve tasks is something I find exciting, and I like keeping up with the
+            latest
+            AI developments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-course">
+    <h2 class="courses-title">Courses</h2>
+    <div class="courses-links">
+      <a href="img/kurswwwcz1.pdf" class="course-link" target="_blank">Web Design
+        pt.
+        I HTML, CSS, RWD</a>
+      <a href="img/kurswwwcz.2.pdf" class="course-link" target="_blank">Web Design pt. II SaSS, JS, Bootstrap</a>
+      <a href="img/kurswwwcz3.pdf" class="course-link" target="_blank">Web Design pt. III</a>
+      <a href="img/kurswwwcz4.pdf" class="course-link" target="_blank">Web Design pt. IV</a>
+      <a href="img/vanillajscourse.pdf" class="course-link" target="_blank">JavaScript
+        Course- The only course you need!</a>
+      <a href="img/10projectsvanillajs.pdf" class="course-link" target="_blank">10 Projects
+        in
+        Vanilla JS</a>
+      <p>Beginning C++ Programming - From Beginner to Beyond- in progress..</p>
+    </div>
+  </div>
+
+  <div class="soft-skills">
+    <h2 class="soft-skills__title">Soft Skills</h2>
+    <p class="soft-skills__description">Below you can see the results of my Gallup test and the main 5 talents, and also
+      an official certificate</p>
+
+    <div class="soft-skills__icons">
+      <div class="soft-skills__icon ideation">
+        <i class="fas fa-lightbulb"></i>
+        <p class="soft-skills__name">Ideation</p>
+        <p class="soft-skills__paragraph">Innovative and imaginative thinker, constantly generating fresh and original
+          ideas, finding connections others might miss.</p>
+      </div>
+      <div class="soft-skills__icon strategic">
+        <i class="fas fa-bullseye"></i>
+        <p class="soft-skills__name">Strategic</p>
+        <p class="soft-skills__paragraph">Forward-thinking planner, adept at anticipating and navigating complexities,
+          turning challenges into opportunities with precision.</p>
+      </div>
+      <div class="soft-skills__icon restorative">
+        <i class="fas fa-tools"></i>
+        <p class="soft-skills__name">Restorative</p>
+        <p class="soft-skills__paragraph">Problem-solving expert, excelling in identifying and fixing issues, bringing a
+          sense of order and improvement.</p>
+      </div>
+      <div class="soft-skills__icon relator">
+        <i class="fas fa-handshake"></i>
+        <p class="soft-skills__name">Relator</p>
+        <p class="soft-skills__paragraph">Relationship cultivator, values deep connections, thrives in one-on-one
+          interactions, fosters trust and meaningful bonds.</p>
+      </div>
+      <div class="soft-skills__icon individualization">
+        <i class="fas fa-user"></i>
+        <p class="soft-skills__name">Individualization</p>
+        <p class="soft-skills__paragraph">Keen observer of unique strengths, tailoring approaches to individuals,
+          recognizing and celebrating the distinct qualities.</p>
+      </div>
+    </div>
+
+    <div class="soft-skills__download">
+      <a href="img/gallup nawrocki.pdf" target="_blank">
+        <i class="fas fa-download"></i>Gallup Certificate
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <section id="projects" class="projects-section">
+    <h2 class="color-change" id="projects-title">Projects</h2>
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+    <p class="paragraph" id="projects-text">Loading Projects...</p>
+    <p class="additional-paragraph">This portfolio website is my first project, but the new one will be updated shortly.
+    </p>
+  </section>
+
+  <section id="hobbies-section" class="hobbies-section">
+    <div class="container">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="hobby hobby-left">
+        <div class="hobby__photo">
+          <img src="img/books.jpg" alt="Books">
+        </div>
+        <div class="hobby__content">
+          <h3 class="hobby__title">Reading and Learning</h3>
+          <p class="hobby__description">I love to learn new things. I read about them everyday because there is always a
+            knowledge to gain.I also like to dive in some another dimension or a part of the history, the last saga i
+            read
+            was written by XVI century samurai named Musashi Miyamoto named the The Scroll Of Five Rings. I learned a
+            lot
+            about myself while reading the saga and it's also a really interesting story that's based on facts. </p>
+        </div>
+      </div>
+
+      <div class="hobby hobby-right">
+        <div class="hobby__photo">
+          <img src="img/spaghetti.jpg" alt="Spaghetti">
+        </div>
+        <div class="hobby__content">
+          <h3 class="hobby__title">Cooking</h3>
+          <p class="hobby__description">I really love cooking, that's a part of my lifestyle. For now I'm especially
+            interested in pasta and soups. 
+          </p>
+        </div>
+      </div>
+
+      <div class="hobby hobby-left">
+        <div class="hobby__photo">
+          <img src="img/bjj.jpg" alt="2 guys training Martial Arts">
+        </div>
+        <div class="hobby__content">
+          <h3 class="hobby__title">Martial Arts</h3>
+          <p class="hobby__description">At the age of 15 I started to train mixed martial arts, and I train with some
+            breaks on on the way till today. I'm a big UFC fan and a technique passionate. I see much similiraties with
+            training martial arts and coding and I want to mix them up to create my dreamed lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="contact__title">Contact</h2>
+      <p>You can contact me via the following social media or email.</p>
+
+
+      <div class="contact__icons">
+        <a href="https://github.com/SzymekNawrocki" target="_blank"
+          class="contact__icons__icon contact__icons__icon--github"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/szymeknawrocki/?fbclid=IwAR2hcq-HzWq5OkR6Em48SrHHQR4V6wJFwEhdFBOgT_ZXtDt27xFDcTMNSc4"
+          target="_blank" class="contact__icons__icon contact__icons__icon--instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/szymon.nawrocki.10/" target="_blank"
+          class="contact__icons__icon contact__icons__icon--facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/szymon-nawrocki-660940204/" target="_blank"
+          class="contact__icons__icon contact__icons__icon--linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="footer" id="footer">
+    <p>© Szymon Nawrocki - 2024</p>
+    <p>szymonjakubnawrocki@gmail.com</p>
+  </div>
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
